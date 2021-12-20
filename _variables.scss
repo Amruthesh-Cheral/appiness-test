@@ -1,0 +1,23 @@
+:root {
+	--titillium: 'Titillium Bold';
+	--stagSans: 'Stag Sans';
+	--light_blue: #1D5AA6;
+	--brand_green: #22B78E;
+	--btn_red: #DD5A6A;
+	--dark_red: #e63348;
+	--black: #000;
+	--white: #fff;
+}
+
+// colors
+
+$btn_red : var(--btn_red);
+$light_blue: var(--light_blue);
+$brand_green: var(--brand_green);
+$black: var(--black);
+$white: var(--white);
+
+// fonts
+
+$titillium: var(--titillium);
+$stagSans: var(--stagSans);

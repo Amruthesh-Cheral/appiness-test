@@ -1,0 +1,156 @@
+@import "./fonts";
+@import "./variables";
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style-type: none;
+	outline: none;
+}
+
+
+
+html {
+	scroll-behavior: smooth;
+	font-size: 16px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color: $black;
+	font-family: $stagSans;
+
+	background: $white;
+}
+
+section {
+	max-width: 100%;
+	margin: 0px auto;
+	padding: 20px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $stagSans;
+}
+
+p {
+	font-family: $stagSans;
+}
+
+a {
+	color: $black;
+	transition: .3s all ease;
+	font-family: $stagSans;
+}
+
+a:hover {
+	color: #000;
+}
+
+hr{
+    border-top: 1px solid #ECECFF;
+    width: 100%;
+}
+
+/*-------------------------------------------------------
+                     HEADER STYLE
+-------------------------------------------------------*/
+
+
+/*-------------------------------------------------------
+                    BRAND BUTTON
+-------------------------------------------------------*/
+
+.brand_button,
+.brand_button::after {
+	transition: all 0.3s;
+}
+
+.brand_button {
+    border: none;
+	background: $btn_red;
+	border-radius: 3.2px;
+	color: $white;
+	font-size: 0.8rem;
+	font-weight: 600;
+	padding: 10px 13px;
+	position: relative;
+	z-index: 999;
+	box-sizing: border-box;
+}
+
+.brand_button::before,
+.brand_button::after {
+	background: #c53042;
+	content: '';
+	position: absolute;
+	z-index: -1;
+	border-radius: 3.2px;
+}
+
+.brand_button:hover {
+	color: $white;
+}
+
+
+/* Brand BUtton */
+
+.brand_button::after {
+	height: 0;
+	left: 50%;
+	top: 50%;
+	width: 0;
+}
+
+.brand_button:hover:after {
+	height: 100%;
+	left: 0;
+	top: 0;
+	width: 100%;
+    background: #c53042;
+}
+
+.brand_button:hover:after {
+	height: 100%;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+
+
+/*-------------------------------------------------------
+                     BRAND BUTTON END
+-------------------------------------------------------*/
+
+.main-headings{
+    color: $brand_green;
+    font-size: 1.7rem;
+	margin-bottom: 2rem;
+}
+#scrolltotop {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	background-color: $black;
+	color: $white;
+	cursor: pointer;
+	padding: 6px 13px;
+	border-radius: 4px;
+  }
+  #scrolltotop:hover {
+	  background-color: rgb(77, 76, 76);
+	  transition: .5s;
+  }
